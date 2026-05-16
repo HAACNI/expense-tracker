@@ -1,0 +1,258 @@
+body{
+    font-size: large;
+    color:#764b36;
+    padding-top:80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('bgrest.png');
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.homebody{
+    font-size: large;
+    color:#764b36;
+    padding-top:80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color:#764b36;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    padding:12px 30px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight:500;
+}
+
+.navbar a:hover{
+    color:#ffd7c2;
+}
+
+.logo{
+    width: 80px;
+    height: 40px;
+    margin-right: 15px;
+}
+input,select{
+    padding:10px;
+    margin:10px;
+    width:60%;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+ul{
+    list-style-position: inside;
+    text-align:left;
+}
+.sign{
+    color:palevioletred;
+}
+.card{
+    background-color:#764b36;
+    padding:30px;
+    border-radius:15px;
+    width:50%;
+    margin:40px auto;
+    color: whitesmoke;
+    box-shadow:0 6px 15px rgba(0,0,0,0.25);
+}
+
+label{
+    color: whitesmoke;
+}
+
+.dashboard-container{
+width:80%;
+margin:auto;
+margin-top:120px;
+text-align:center;
+flex:1;
+}
+
+.dash-title{
+margin-bottom:40px;
+font-size:36px;
+}
+
+.dashboard-options{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.dash-option{
+background:#764b36;
+color:white;
+text-decoration:none;
+padding:40px;
+border-radius:15px;
+transition:0.3s;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.dash-option:hover{
+transform:translateY(-8px);
+background:#8c5a41;
+}
+
+.dash-option h2{
+margin-bottom:10px;
+}
+
+.dash-option p{
+font-size:14px;
+opacity:0.9;
+}
+
+.summary{
+    display:flex;
+    gap:20px;
+    margin:30px 0;
+}
+
+.summary-card{
+    background:linear-gradient(135deg,#8b5e3c,#764b36);
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    width:33%;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.summary-card:hover{
+    transform:translateY(-5px);
+}
+.filters{
+    margin:15px 0;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.filters label{
+    color:#764b36;
+    font-weight:500;
+}
+.chart-placeholder{
+    width:60%;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+.chart-img{
+    width:350px;
+    max-width:100%;
+    display:block;
+    margin:auto;
+}
+.filters select{
+    color:#333;
+    background:white;
+    width:200px;
+}
+
+#expenseChart{
+    max-width:350px;
+    max-height:350px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+th{
+    background:#764b36;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f5f5f5;
+}
+
+tr:hover{
+    background:#eee;
+}
+button{
+    padding:6px 12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.edit-btn{
+    background:#4CAF50;
+    color:white;
+}
+
+.delete-btn{
+    background:#e74c3c;
+    color:white;
+}
+
+button:hover{
+    opacity:0.85;
+}
+h1{
+    margin-bottom:10px;
+}
+h2{
+    margin:20px 0;
+}
+.homeimage{
+    width:100%;
+    height:auto;
+    display:block;
+    margin:40px auto;
+}
+.summary{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.summary-card{
+width:180px;
+padding:20px;
+text-align:center;
+}
+footer{
+    margin-top:auto;
+    background-color: whitesmoke; 
+    color:palevioletred ;               
+    text-align: center;          
+    padding: 15px;               
+    font-size: 16px;
+}

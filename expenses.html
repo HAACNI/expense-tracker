@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="auth.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expenses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<img src="trackitlogo.png" class="logo">
+<a href ="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="addexpenses.html">Add Expenses</a>
+</div>
+
+<div class="dashboard-container">
+
+<h1>Expenses</h1>
+
+<div class="filters">
+
+<label>Month</label>
+<select id="filter-month">
+<option value="all">All</option>
+<option value="01">January</option>
+<option value="02">February</option>
+<option value="03">March</option>
+<option value="04">April</option>
+<option value="05">May</option>
+<option value="06">June</option>
+<option value="07">July</option>
+<option value="08">August</option>
+<option value="09">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select>
+
+<label>Category</label>
+<select id="filter-category">
+<option value="all">All</option>
+<option value="food">Food</option>
+<option value="transport">Transport</option>
+<option value="bills">Bills</option>
+<option value="shopping">Shopping</option>
+<option value="entertainment">Entertainment</option>
+<option value="other">Other</option>
+</select>
+
+<input type="text" id="filter-search" placeholder="Search expense">
+
+<button onclick="applyFilters()">Apply</button>
+
+</div>
+
+<h2>Expense List</h2>
+
+<table id="expenses-table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Description</th>
+<th>Category</th>
+<th>Payment</th>
+<th>Amount</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="expenses-table-body">
+<!-- Rows will be injected by JavaScript -->
+</tbody>
+</table>
+
+</div>
+<footer>
+     2026 Track It | Smart Expense Tracking  
+    for better financial habits
+</footer> 
+<script src="app.js"></script>
+</body>
+</html>

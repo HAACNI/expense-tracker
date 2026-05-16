@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="auth.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<img src="trackitlogo.png" class="logo">
+<a href="home.html">Home</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Sign Up</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="addexpenses.html">Add Expenses</a>
+</div>
+
+<div class="dashboard-container">
+
+<h1>Budget</h1>
+
+<div class="card">
+
+<label>Select Month</label><br>
+<input type="month" id="budget-month" onchange="renderBudget()">
+<br><br>
+
+<label>Set Monthly Budget</label>
+
+<input type="number" id="budget-input" placeholder="Enter budget">
+
+<button onclick="saveBudget()">Save Budget</button>
+
+<p id="budget-used">Budget Used:  0%</p>
+
+</div>
+
+</div>
+<footer>
+     2026 Track It | Smart Expense Tracking  
+     for better financial habits
+</footer> 
+<script src="app.js"></script>
+</body>
+</html>

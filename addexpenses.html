@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="auth.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="trackitlogo.png" alt="TrackIt Logo" class="logo">
+        <a href ="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="addexpenses.html">Add Expenses</a>
+
+    </div>
+    <div class="card">
+        <center>
+        <h2>Add Expenses</h2>
+            
+
+            
+            <form onsubmit="addExpense(); return false;">
+                <label>EXPENSE NAME</label><br>
+                <input type="text" name="description"  id="description" placeholder="Enter the name of the expense" required><br>
+                <label>AMOUNT</label><br>
+                <input type="number" name="amount" id="amount" placeholder="Enter the amount of the expense" required><br>
+                <label>CATEGORY</label><br>
+                <select name="category" id="category" placeholder="Enter the category of the expense" required>
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="bills">Bills</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label>DATE</label><br>
+                <input type="date" name="date" id="date" placeholder="Enter the date of the expense" required><br>
+                <input type="submit"><br>
+            </form>
+            </center>
+
+        
+    </div>
+    <footer>
+     2026 Track It | Smart Expense Tracking  
+    for better financial habits
+</footer> 
+<script src="app.js"></script>
+</body>
+</html>

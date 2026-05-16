@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="auth.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<img src="trackitlogo.png" class="logo">
+<a href ="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="addexpenses.html">Add Expenses</a>
+</div>
+
+<div class="dashboard-container">
+
+<h1>Analytics</h1>
+
+<h2>Spending by Category</h2>
+
+<div class="chart-container" style="position: relative; height:300px; width:100%">
+    <canvas id="category-chart"></canvas>
+</div>
+
+<h2>Monthly Spending</h2>
+
+<div class="chart-container" style="position: relative; height:300px; width:100%">
+    <canvas id="monthly-chart"></canvas>
+</div>
+
+<h2>Category Breakdown</h2>
+
+<ul id="category-breakdown-list">
+<!-- Dynamically populated by app.js -->
+</ul>
+
+</div>
+<footer>
+    2026 Track It | Smart Expense Tracking  
+     for better financial habits
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
